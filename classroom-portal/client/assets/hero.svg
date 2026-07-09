@@ -1,0 +1,71 @@
+<svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2B3A67"/>
+      <stop offset="100%" stop-color="#16213E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- desk surface -->
+  <ellipse cx="260" cy="392" rx="220" ry="34" fill="#0F1830" opacity="0.5"/>
+
+  <!-- open book -->
+  <g>
+    <path d="M60 330 L255 300 L255 130 L60 158 Z" fill="#F4EFE2"/>
+    <path d="M460 330 L265 300 L265 130 L460 158 Z" fill="#EDE6D4"/>
+    <path d="M255 130 L265 130 L265 300 L255 300 Z" fill="#D9A441"/>
+    <!-- page lines left -->
+    <g stroke="#C9C0A6" stroke-width="2">
+      <line x1="85" y1="185" x2="228" y2="167"/>
+      <line x1="85" y1="210" x2="228" y2="192"/>
+      <line x1="85" y1="235" x2="228" y2="217"/>
+      <line x1="85" y1="260" x2="228" y2="242"/>
+    </g>
+    <!-- page lines right -->
+    <g stroke="#C9C0A6" stroke-width="2">
+      <line x1="292" y1="167" x2="435" y2="185"/>
+      <line x1="292" y1="192" x2="435" y2="210"/>
+      <line x1="292" y1="217" x2="435" y2="235"/>
+      <line x1="292" y1="242" x2="435" y2="260"/>
+    </g>
+  </g>
+
+  <!-- graduation cap -->
+  <g transform="translate(260 62)">
+    <polygon points="0,0 92,26 0,52 -92,26" fill="#D9A441"/>
+    <polygon points="0,10 70,29 0,48 -70,29" fill="#B9822A"/>
+    <rect x="-6" y="26" width="12" height="46" rx="3" fill="#D9A441"/>
+    <circle cx="0" cy="76" r="7" fill="#D9A441"/>
+    <line x1="70" y1="29" x2="86" y2="70" stroke="#B9822A" stroke-width="3"/>
+    <circle cx="86" cy="76" r="5" fill="#B9822A"/>
+  </g>
+
+  <!-- floating id-card chip -->
+  <g transform="translate(348 236) rotate(8)">
+    <rect x="0" y="0" width="112" height="72" rx="10" fill="url(#deskGrad)" stroke="#D9A441" stroke-width="1.5"/>
+    <circle cx="92" cy="16" r="6" fill="#ECEFF5" opacity="0.85"/>
+    <rect x="14" y="18" width="46" height="8" rx="2" fill="#9FA8C4"/>
+    <rect x="14" y="32" width="66" height="6" rx="2" fill="#D9A441"/>
+    <g fill="#D9A441" opacity="0.8">
+      <rect x="14" y="50" width="3" height="14"/>
+      <rect x="19" y="50" width="2" height="14"/>
+      <rect x="23" y="50" width="4" height="14"/>
+      <rect x="29" y="50" width="2" height="14"/>
+      <rect x="33" y="50" width="3" height="14"/>
+      <rect x="38" y="50" width="5" height="14"/>
+      <rect x="45" y="50" width="2" height="14"/>
+      <rect x="49" y="50" width="3" height="14"/>
+      <rect x="54" y="50" width="4" height="14"/>
+      <rect x="60" y="50" width="2" height="14"/>
+      <rect x="64" y="50" width="3" height="14"/>
+      <rect x="69" y="50" width="5" height="14"/>
+    </g>
+  </g>
+
+  <!-- pencil -->
+  <g transform="translate(96 244) rotate(-18)">
+    <rect x="0" y="0" width="110" height="14" rx="3" fill="#D9A441"/>
+    <polygon points="110,0 128,7 110,14" fill="#F4EFE2"/>
+    <rect x="-10" y="0" width="10" height="14" fill="#B5503A"/>
+  </g>
+</svg>

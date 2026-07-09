@@ -234,21 +234,13 @@ function shell(inner) {
   <div class="app-shell">
     <div class="side-spacer"></div>
 
-<div class="id-chip user-card">
-    <div class="avatar">👤</div>
-
+<div class="id-chip">
     <div class="name">${esc(u.name || '')}</div>
-
-    <div class="reg">
-        ${state.role === 'admin' ? 'ADMINISTRATOR' : esc(u.regNo)}
-    </div>
-
-    <div class="role">
-        ${esc(state.role)}
-    </div>
+    <div class="reg">${state.role === 'admin' ? 'ADMINISTRATOR' : esc(u.regNo)}</div>
+    <div class="role">${esc(state.role)}</div>
 </div>
 
-<button class="logout-btn" data-act="logout">
+<button class="btn btn-danger btn-sm full-width" data-act="logout">
     🚪 Log Out
 </button>
     </div>

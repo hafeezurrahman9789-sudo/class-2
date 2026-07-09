@@ -34,16 +34,11 @@
 })();
 
 /* ===================== PWA INSTALL PROMPT ===================== */
+// Install button disabled
 let deferredInstallPrompt = null;
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredInstallPrompt = e;
-  paint();
-});
-window.addEventListener('appinstalled', () => { deferredInstallPrompt = null; paint(); });
+
 function installButton(extraClass) {
-  if (!deferredInstallPrompt) return '';
-  return `<button class="btn btn-gold btn-sm ${extraClass||''}" data-act="install-app">⇩ Install app</button>`;
+  return '';
 }
 
 /* ===================== API HELPER ===================== */

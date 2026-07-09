@@ -232,17 +232,20 @@ function shell(inner) {
   const u = state.user;
   return `
   <div class="app-shell">
-    <div class="side-spacer"></div>
-
-<div class="id-chip">
-    <div class="name">${esc(u.name || '')}</div>
-    <div class="reg">${state.role === 'admin' ? 'ADMINISTRATOR' : esc(u.regNo)}</div>
-    <div class="role">${esc(state.role)}</div>
-</div>
-
-<button class="btn btn-danger btn-sm full-width" data-act="logout">
-    🚪 Log Out
-</button>
+    <div class="sidebar">
+      <div><div class="brand"><img src="/assets/favicon.svg" alt="">The Register</div><div class="brand-sub">${state.role} portal</div></div>
+      ${sideNav()}
+      <div class="side-spacer"></div>
+      ${installButton('full-width')}
+      <div class="id-chip">
+        <div class="name">${esc(u.name || '')}</div>
+        <div class="reg">${state.role==='admin' ? 'ADMINISTRATOR' : esc(u.regNo)}</div>
+        <div class="role">${esc(state.role)}</div>
+      </div>
+      <button class="btn btn-ghost btn-sm" style="width:100%" data-act="logout">Log out</button>
+    </div>
+    <div class="main">${inner}</div>
+  </div>`;
     </div>
     <div class="main">${inner}</div>
   </div>`;

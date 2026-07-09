@@ -246,9 +246,6 @@ function shell(inner) {
     </div>
     <div class="main">${inner}</div>
   </div>`;
-    </div>
-    <div class="main">${inner}</div>
-  </div>`;
 }
 function pageHead(eyebrow, title) {
   return `<div class="page-head">${backButton()}<div class="eyebrow">${esc(eyebrow)}</div><h2>${esc(title)}</h2></div>`;
